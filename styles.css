@@ -35,13 +35,13 @@ body {
     background-color: #111; /* Darker background for the display */
     color: #0F0; /* Classic green LED color */
     border: 2px solid #222; /* Slight border for the display */
-    padding: 15px 20px;
     border-radius: 5px; /* Slightly rounded corners for the display */
-    font-size: 6vh;
     text-align: right;
     direction: rtl;      /* Change text flow direction to right-to-left */
     white-space: nowrap; /* Ensure the content doesn't wrap to the next line */
     overflow: hidden;   /* Hide the overflow */
+    font-size: 9vh;  /* Adjusted for better scaling */
+    padding: 0 20px 0 20px;
 }
 
 button {
@@ -76,12 +76,6 @@ button[onclick^="setOperator"]:hover {
     background-color: #2196F3; /* Lighter blue on hover */
 }
 
-#result {
-    grid-column: 1 / 5;
-    font-size: 7.5vh;  /* Adjusted for better scaling */
-    padding: 0 20px 0 20px;
-}
-
 #equal {
     background-color: #FF9800; /* Orange for equals button */
 }
@@ -96,15 +90,4 @@ button[onclick^="setOperator"]:hover {
 
 #clear:hover, #backspace:hover {
     background-color: #616161; /* Lighter gray on hover */
-}
-
-/* Limit font-size for responsiveness */
-@media (max-width: 600px) {
-    #result {
-        font-size: 6vh;
-    }
-
-    .container button {
-        font-size: 5vh;
-    }
 }
